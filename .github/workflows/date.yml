@@ -30,6 +30,7 @@ jobs:
   job4:
     name: Fourth job
     runs-on: ubuntu-20.04
+    needs: [job1, job2, job3]
     steps:
     - name: step-one
       uses: actions/checkout@v2
