@@ -1,0 +1,26 @@
+name: date
+
+on: push
+
+jobs:
+  job1:
+    name: First job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print date on Ubuntu
+      run: date      
+  job2:
+    name: Second job
+    runs-on: windows-latest
+    - name: Print date on windows
+      run: echo %DATE%
+  job3:
+    name: Third job
+    runs-on: macos-latest
+    - name: Print date on macos
+      run: date
+  job4:
+    name: Fourth job
+    runs-on: ubuntu-20.04
+    - name: Print date on Ubuntu
+      run: date
